@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>RE:FRAME Slide Viewer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #111; font-family: sans-serif; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+  #toolbar {
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    color: #ccc;
+    font-size: 13px;
+  }
+  #toolbar button {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: #ccc;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  #toolbar button:hover { background: #3a3a3a; }
+  #toolbar button:disabled { opacity: 0.4; cursor: default; }
+  #slide-counter { color: #888; min-width: 60px; text-align: center; }
+  #slide-title { color: #aaa; flex: 1; text-align: center; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
+  #viewer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+  }
+  #iframe-wrapper {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    transform-origin: center center;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+  }
+  #slide-frame {
+    width: 1920px;
+    height: 1080px;
+    border: none;
+    display: block;
+  }
+  .kbd {
+    background: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 3px;
+    padding: 2px 6px;
+    font-size: 11px;
+    color: #888;
+  }
+</style>
+</head>
+<body>
+<div id="toolbar">
+  <button id="btn-prev" onclick="navigate(-1)">◀ 이전</button>
+  <span id="slide-counter">1 / 10</span>
+  <button id="btn-next" onclick="navigate(1)">다음 ▶</button>
+  <span id="slide-title"></span>
+  <span class="kbd">← →</span>
+</div>
+<div id="viewer">
+  <div id="iframe-wrapper">
+    <iframe id="slide-frame" src=""></iframe>
+  </div>
+</div>
+
+<script>
+const slides = [
+  { file: "slides/01-cover.html", title: "Cover" },
+  { file: "slides/02-problem.html", title: "Problem" },
+  { file: "slides/03-solution.html", title: "Solution" },
+  { file: "slides/04-service-process.html", title: "Service Process" },
+  { file: "slides/05-ux-framework.html", title: "UX Framework" },
+  { file: "slides/06-demo.html", title: "Demo" },
+  { file: "slides/07-ux-report.html", title: "UX Report" },
+  { file: "slides/08-mvp-features.html", title: "MVP Features" },
+  { file: "slides/09-tech-stack.html", title: "Tech Stack" },
+  { file: "slides/10-closing.html", title: "Closing" },
+];
+
+let current = 0;
+
+function scale() {
+  const wrapper = document.getElementById('iframe-wrapper');
+  const viewer = document.getElementById('viewer');
+  const vw = viewer.clientWidth - 40;
+  const vh = viewer.clientHeight - 40;
+  const s = Math.min(vw / 1920, vh / 1080);
+  wrapper.style.transform = `scale(${s})`;
+}
+
+function navigate(dir) {
+  current = Math.max(0, Math.min(slides.length - 1, current + dir));
+  load();
+}
+
+function load() {
+  const s = slides[current];
+  document.getElementById('slide-frame').src = s.file;
+  document.getElementById('slide-counter').textContent = `${current + 1} / ${slides.length}`;
+  document.getElementById('slide-title').textContent = s.title;
+  document.getElementById('btn-prev').disabled = current === 0;
+  document.getElementById('btn-next').disabled = current === slides.length - 1;
+}
+
+window.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') navigate(1);
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') navigate(-1);
+});
+
+window.addEventListener('resize', scale);
+scale();
+load();
+</script>
+</body>
+</html>

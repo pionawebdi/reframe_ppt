@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "format": "html",
+  "metadata": {
+    "title": "Helix — 시리즈 B 피치 (브랜드 적용판)",
+    "description": "Pentagram 식 7시스템 브랜드 적용 방법론을 시연하는 16매 가공 인프라 SaaS 피치 데모 deck. 부록으로 Brand-Decision Map 1매 포함.",
+    "author": "Helix Brand Studio (가공)"
+  },
+  "canvas": {"width": 1920, "height": 1080},
+  "playlist": [
+    "01-cover.html",
+    "02-agenda.html",
+    "03-why-now.html",
+    "04-category-problem.html",
+    "05-what-broke.html",
+    "06-our-insight.html",
+    "07-how-it-works.html",
+    "08-value-speed.html",
+    "09-value-security.html",
+    "10-value-dx.html",
+    "11-traction.html",
+    "12-customers.html",
+    "13-roadmap.html",
+    "14-data-chart.html",
+    "15-closing.html",
+    "16-credits.html",
+    "17-brand-decision-map.html"
+  ]
+}
