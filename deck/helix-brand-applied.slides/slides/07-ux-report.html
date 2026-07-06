@@ -9,6 +9,7 @@
 <body>
 <div class="slide-container" data-screen-label="07 UX Report" style="position:relative;width:1920px;height:1080px;overflow:hidden;background:#FFFFFF;color:#0F2540;">
 
+  <!-- Top bar -->
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:96px;top:60px;width:400px;height:24px;z-index:10;">
     <div style="font-weight:700;font-size:18px;letter-spacing:0.32em;color:#0F2540;">RE:FRAME</div>
   </div>
@@ -22,112 +23,108 @@
   </div>
 
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:96px;top:210px;width:1200px;height:160px;z-index:10;">
-    <div style="font-weight:700;font-size:60px;line-height:1.06;letter-spacing:-0.02em;color:#0F2540;">한눈에 보이는 등급,<br>손에 잡히는 우선순위.</div>
+    <div style="font-weight:700;font-size:60px;line-height:1.06;letter-spacing:-0.02em;color:#0F2540;">한눈에 보이는 진단,<br>손에 잡히는 우선순위.</div>
   </div>
 
-  <!-- LEFT — Overall grade card (Navy fill, single accent) -->
+  <!-- LEFT — AI Insight card (Navy) -->
   <div data-object="true" data-object-type="shape" style="position:absolute;left:96px;top:440px;width:560px;height:496px;background:#0F2540;z-index:1;"></div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:128px;top:468px;width:496px;height:32px;z-index:10;">
-    <div style="font-weight:600;font-size:13px;letter-spacing:0.28em;color:#2563EB;text-transform:uppercase;">Overall Grade</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute;left:128px;top:468px;width:496px;height:24px;z-index:10;">
+    <div style="font-weight:600;font-size:17px;letter-spacing:0.28em;color:#2563EB;text-transform:uppercase;">AI Insight</div>
   </div>
-  <div data-object="true" data-object-type="shape" style="position:absolute;left:128px;top:508px;width:40px;height:1px;background:rgba(255,255,255,0.55);z-index:2;"></div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:128px;top:530px;width:496px;height:280px;z-index:10;">
-    <div style="font-weight:700;font-size:280px;line-height:0.85;letter-spacing:-0.06em;color:#FFFFFF;">C</div>
+  <div data-object="true" data-object-type="shape" style="position:absolute;left:128px;top:508px;width:40px;height:1px;background:rgba(255,255,255,0.4);z-index:2;"></div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute;left:128px;top:528px;width:464px;height:320px;z-index:10;">
+    <div style="font-weight:400;font-size:21px;line-height:1.8;color:rgba(255,255,255,0.9);">000 웹페이지는 정보량이 상당히 많지만, 전반적으로 잘 정리되어 사용자가 원하는 정보를 찾기 쉽습니다.<br><br>다만 접근성 측면에서 개선할 점들이 눈에 띕니다.<br><br>특히 색상 대비 문제와 버튼·링크의 이름 누락은 보조 기술 사용자에게 큰 불편을 초래할 수 있어 최우선으로 개선이 필요합니다.</div>
   </div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:128px;top:830px;width:496px;height:32px;z-index:10;">
-    <div style="font-weight:700;font-size:28px;line-height:1.2;letter-spacing:-0.01em;color:#FFFFFF;">68 / 100</div>
-  </div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:128px;top:872px;width:496px;height:48px;z-index:10;">
-    <div style="font-weight:400;font-size:15px;line-height:1.5;color:rgba(255,255,255,0.85);">6개 카테고리 중 미달 2 · 점검 필요 1<br>example.com · 2026.06.20</div>
+  <div data-object="true" data-object-type="textbox" style="position:absolute;left:128px;top:876px;width:496px;height:44px;z-index:10;">
+    <div style="font-weight:400;font-size:14px;line-height:1.5;color:rgba(255,255,255,0.4);">example.com · 2026.06.20</div>
   </div>
 
-  <!-- CENTER — 6 categories grid -->
+  <!-- CENTER — Radar chart -->
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:696px;top:440px;width:600px;height:24px;z-index:10;">
-    <div style="font-weight:600;font-size:13px;letter-spacing:0.28em;color:#2563EB;text-transform:uppercase;">Category Breakdown</div>
+    <div style="font-weight:600;font-size:17px;letter-spacing:0.28em;color:#2563EB;text-transform:uppercase;">Category Breakdown</div>
   </div>
   <div data-object="true" data-object-type="shape" style="position:absolute;left:696px;top:476px;width:600px;height:1px;background:#0F2540;z-index:2;"></div>
 
-  <!-- 6 categories: 2 cols × 3 rows -->
-  <div data-object="true" data-object-type="shape" style="position:absolute;left:696px;top:500px;width:288px;height:128px;border:1px solid #E5E8ED;z-index:1;"></div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:716px;top:520px;width:248px;height:24px;z-index:10;">
-    <div style="font-weight:400;font-size:14px;letter-spacing:0.04em;color:#8FA0B6;">가독성</div>
-  </div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:716px;top:548px;width:248px;height:64px;z-index:10;">
-    <div style="font-weight:700;font-size:56px;line-height:1.0;letter-spacing:-0.02em;color:#0F2540;">B</div>
+  <div style="position:absolute;left:696px;top:480px;width:600px;height:456px;z-index:10;">
+    <svg viewBox="0 0 600 460" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
+      <!-- Grid: cx=300, cy=230, max_r=160 -->
+      <!-- 100% -->
+      <polygon points="300,70 438.6,150 438.6,310 300,390 161.4,310 161.4,150" fill="none" stroke="#E5E8ED" stroke-width="1.5"/>
+      <!-- 75% r=120 -->
+      <polygon points="300,110 403.9,170 403.9,290 300,350 196.1,290 196.1,170" fill="none" stroke="#E5E8ED" stroke-width="1"/>
+      <!-- 50% r=80 -->
+      <polygon points="300,150 369.3,190 369.3,270 300,310 230.7,270 230.7,190" fill="none" stroke="#E5E8ED" stroke-width="1"/>
+      <!-- 25% r=40 -->
+      <polygon points="300,190 334.6,210 334.6,250 300,270 265.4,250 265.4,210" fill="none" stroke="#E5E8ED" stroke-width="1"/>
+
+      <!-- Axis lines -->
+      <line x1="300" y1="230" x2="300" y2="70" stroke="#E5E8ED" stroke-width="1.5"/>
+      <line x1="300" y1="230" x2="438.6" y2="150" stroke="#E5E8ED" stroke-width="1.5"/>
+      <line x1="300" y1="230" x2="438.6" y2="310" stroke="#E5E8ED" stroke-width="1.5"/>
+      <line x1="300" y1="230" x2="300" y2="390" stroke="#E5E8ED" stroke-width="1.5"/>
+      <line x1="300" y1="230" x2="161.4" y2="310" stroke="#E5E8ED" stroke-width="1.5"/>
+      <line x1="300" y1="230" x2="161.4" y2="150" stroke="#E5E8ED" stroke-width="1.5"/>
+
+      <!-- Data polygon -->
+      <!-- 가독성 75%(θ=0°,r=120): 300,110 -->
+      <!-- 정보위계 65%(θ=60°,r=104): 390,178 -->
+      <!-- CTA명확성 78%(θ=120°,r=124.8): 408,292 -->
+      <!-- 성능 62%(θ=180°,r=99.2): 300,329 -->
+      <!-- 일관성 88%(θ=240°,r=140.8): 178,300 -->
+      <!-- 접근성 45%(θ=300°,r=72): 238,194 -->
+      <polygon points="300,110 390,178 408,292 300,329 178,300 238,194" fill="rgba(37,99,235,0.12)" stroke="#2563EB" stroke-width="2.5"/>
+
+      <!-- Data points -->
+      <circle cx="300" cy="110" r="6" fill="#2563EB"/>
+      <circle cx="390" cy="178" r="6" fill="#2563EB"/>
+      <circle cx="408" cy="292" r="6" fill="#2563EB"/>
+      <circle cx="300" cy="329" r="6" fill="#2563EB"/>
+      <circle cx="178" cy="300" r="6" fill="#2563EB"/>
+      <!-- 접근성 미달 강조 -->
+      <circle cx="238" cy="194" r="7" fill="#EF4444"/>
+
+      <!-- Labels -->
+      <text x="300" y="50" text-anchor="middle" font-family="Pretendard,sans-serif" font-size="16" font-weight="700" fill="#0F2540">가독성 <tspan fill="#2563EB">75</tspan></text>
+      <text x="452" y="148" text-anchor="start" font-family="Pretendard,sans-serif" font-size="16" font-weight="700" fill="#0F2540">정보 위계 <tspan fill="#2563EB">65</tspan></text>
+      <text x="452" y="312" text-anchor="start" font-family="Pretendard,sans-serif" font-size="16" font-weight="700" fill="#0F2540">CTA 명확성 <tspan fill="#2563EB">78</tspan></text>
+      <text x="300" y="416" text-anchor="middle" font-family="Pretendard,sans-serif" font-size="16" font-weight="700" fill="#0F2540">성능 <tspan fill="#2563EB">62</tspan></text>
+      <text x="148" y="312" text-anchor="end" font-family="Pretendard,sans-serif" font-size="16" font-weight="700" fill="#0F2540">일관성 <tspan fill="#2563EB">88</tspan></text>
+      <text x="148" y="148" text-anchor="end" font-family="Pretendard,sans-serif" font-size="16" font-weight="700" fill="#EF4444">접근성 <tspan>45 ↓</tspan></text>
+    </svg>
   </div>
 
-  <div data-object="true" data-object-type="shape" style="position:absolute;left:1008px;top:500px;width:288px;height:128px;border:1px solid #E5E8ED;z-index:1;"></div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:1028px;top:520px;width:248px;height:24px;z-index:10;">
-    <div style="font-weight:400;font-size:14px;letter-spacing:0.04em;color:#8FA0B6;">정보 위계</div>
-  </div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:1028px;top:548px;width:248px;height:64px;z-index:10;">
-    <div style="font-weight:700;font-size:56px;line-height:1.0;letter-spacing:-0.02em;color:#0F2540;">C</div>
-  </div>
-
-  <div data-object="true" data-object-type="shape" style="position:absolute;left:696px;top:632px;width:288px;height:128px;background:#2563EB;z-index:1;"></div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:716px;top:652px;width:248px;height:24px;z-index:10;">
-    <div style="font-weight:400;font-size:14px;letter-spacing:0.04em;color:rgba(255,255,255,0.85);">접근성 · 미달</div>
-  </div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:716px;top:680px;width:248px;height:64px;z-index:10;">
-    <div style="font-weight:700;font-size:56px;line-height:1.0;letter-spacing:-0.02em;color:#FFFFFF;">D</div>
-  </div>
-
-  <div data-object="true" data-object-type="shape" style="position:absolute;left:1008px;top:632px;width:288px;height:128px;border:1px solid #E5E8ED;z-index:1;"></div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:1028px;top:652px;width:248px;height:24px;z-index:10;">
-    <div style="font-weight:400;font-size:14px;letter-spacing:0.04em;color:#8FA0B6;">CTA 명확성</div>
-  </div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:1028px;top:680px;width:248px;height:64px;z-index:10;">
-    <div style="font-weight:700;font-size:56px;line-height:1.0;letter-spacing:-0.02em;color:#0F2540;">B</div>
-  </div>
-
-  <div data-object="true" data-object-type="shape" style="position:absolute;left:696px;top:764px;width:288px;height:128px;border:1px solid #E5E8ED;z-index:1;"></div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:716px;top:784px;width:248px;height:24px;z-index:10;">
-    <div style="font-weight:400;font-size:14px;letter-spacing:0.04em;color:#8FA0B6;">일관성</div>
-  </div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:716px;top:812px;width:248px;height:64px;z-index:10;">
-    <div style="font-weight:700;font-size:56px;line-height:1.0;letter-spacing:-0.02em;color:#0F2540;">A</div>
-  </div>
-
-  <div data-object="true" data-object-type="shape" style="position:absolute;left:1008px;top:764px;width:288px;height:128px;border:1px solid #E5E8ED;z-index:1;"></div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:1028px;top:784px;width:248px;height:24px;z-index:10;">
-    <div style="font-weight:400;font-size:14px;letter-spacing:0.04em;color:#8FA0B6;">성능</div>
-  </div>
-  <div data-object="true" data-object-type="textbox" style="position:absolute;left:1028px;top:812px;width:248px;height:64px;z-index:10;">
-    <div style="font-weight:700;font-size:56px;line-height:1.0;letter-spacing:-0.02em;color:#0F2540;">C</div>
-  </div>
-
-  <!-- RIGHT — Priority issue -->
+  <!-- RIGHT — 우선순위 개선안 #1 -->
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:1336px;top:440px;width:488px;height:24px;z-index:10;">
-    <div style="font-weight:600;font-size:13px;letter-spacing:0.28em;color:#2563EB;text-transform:uppercase;">Top Priority</div>
+    <div style="font-weight:600;font-size:17px;letter-spacing:0.28em;color:#2563EB;text-transform:uppercase;">우선순위 개선안 #1</div>
   </div>
   <div data-object="true" data-object-type="shape" style="position:absolute;left:1336px;top:476px;width:488px;height:1px;background:#0F2540;z-index:2;"></div>
 
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:1336px;top:500px;width:488px;height:80px;z-index:10;">
-    <div style="font-weight:700;font-size:28px;line-height:1.25;letter-spacing:-0.005em;color:#0F2540;">보조 텍스트 대비율이<br>WCAG 기준에 미달합니다.</div>
+    <div style="font-weight:700;font-size:28px;line-height:1.25;letter-spacing:-0.005em;color:#0F2540;">색상 대비 높이기</div>
   </div>
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:1336px;top:600px;width:488px;height:24px;z-index:10;">
-    <div style="font-weight:600;font-size:14px;letter-spacing:0.22em;color:#2563EB;text-transform:uppercase;">What</div>
+    <div style="font-weight:600;font-size:15px;letter-spacing:0.22em;color:#2563EB;text-transform:uppercase;">What</div>
   </div>
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:1336px;top:626px;width:488px;height:50px;z-index:10;">
-    <div style="font-weight:400;font-size:17px;line-height:1.5;color:#3D4D63;">측정값 <span style="color:#0F2540;font-weight:600;">3.1 : 1</span> · 기준 4.5 : 1 (WCAG 1.4.3) · 신뢰도 high</div>
+    <div style="font-weight:400;font-size:18px;line-height:1.5;color:#3D4D63;">페이지 일부 텍스트가 배경색과 충분히 구분되지 않습니다.</div>
   </div>
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:1336px;top:692px;width:488px;height:24px;z-index:10;">
-    <div style="font-weight:600;font-size:14px;letter-spacing:0.22em;color:#2563EB;text-transform:uppercase;">Why</div>
+    <div style="font-weight:600;font-size:15px;letter-spacing:0.22em;color:#2563EB;text-transform:uppercase;">Why</div>
   </div>
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:1336px;top:718px;width:488px;height:60px;z-index:10;">
-    <div style="font-weight:400;font-size:17px;line-height:1.5;color:#3D4D63;">보조 텍스트가 배경과 잘 구분되지 않아, 시각 보조가 필요한 사용자가 내용을 놓치기 쉽습니다.</div>
+    <div style="font-weight:400;font-size:18px;line-height:1.5;color:#3D4D63;">시력이 낮거나 밝은 환경에서 이용하는 방문자가 내용을 읽지 못하고 이탈할 수 있습니다.</div>
   </div>
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:1336px;top:794px;width:488px;height:24px;z-index:10;">
-    <div style="font-weight:600;font-size:14px;letter-spacing:0.22em;color:#2563EB;text-transform:uppercase;">How</div>
+    <div style="font-weight:600;font-size:15px;letter-spacing:0.22em;color:#2563EB;text-transform:uppercase;">How</div>
   </div>
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:1336px;top:820px;width:488px;height:80px;z-index:10;">
-    <div style="font-weight:400;font-size:17px;line-height:1.5;color:#3D4D63;"><span style="font-family:'IBM Plex Mono', monospace;color:#0F2540;font-weight:600;">#999999</span> → <span style="font-family:'IBM Plex Mono', monospace;color:#0F2540;font-weight:600;">#595959</span>로 변경하면 흰 배경 위에서 대비율 7.0 : 1로 충족합니다.</div>
+    <div style="font-weight:400;font-size:18px;line-height:1.5;color:#3D4D63;">본문 텍스트와 배경 간 명도 차이를 더 크게 조정하면 누구나 읽기 편한 화면이 됩니다.</div>
   </div>
 
   <!-- Footer -->
   <div data-object="true" data-object-type="shape" style="position:absolute;left:96px;top:1000px;width:1728px;height:1px;background:#E5E8ED;z-index:1;"></div>
   <div data-object="true" data-object-type="textbox" style="position:absolute;left:96px;top:1024px;width:1728px;height:24px;z-index:10;">
-    <div style="font-weight:400;font-size:12px;letter-spacing:0.14em;color:#8FA0B6;">리포트 한 장에 — 전체 등급 · 카테고리별 분석 · 우선순위 개선 가이드 · 기준 출처 전체가 함께 담깁니다.</div>
+    <div style="font-weight:400;font-size:13px;letter-spacing:0.14em;color:#8FA0B6;">리포트 한 장에 — AI 총평 · 카테고리별 진단 점수 · 우선순위 개선 가이드 · 기준 출처 전체가 함께 담깁니다.</div>
   </div>
 
 </div>
